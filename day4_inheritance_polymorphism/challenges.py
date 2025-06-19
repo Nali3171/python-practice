@@ -5,18 +5,20 @@ class Animal:
         return "general sound"
     
 class Dog(Animal):
-        def speak(self):
-            return "woof"
+    def speak(self):
+        return "woof"
         
 class Cat(Animal):
-        def speak(self):
-            return "meow"
-#Test
+    def speak(self):
+        return "meow"
+
+# Test
 dog = Dog()
 cat = Cat()
 
 print("Dog says:", dog.speak())
 print("Cat says:", cat.speak())
+
 
 # Challenge 2: Using super() and Initializers
 #Extend the previous challenge:
@@ -28,10 +30,10 @@ class Animal:
      def __init__(self, name):
         self.name = name
 
-         def speak(self):
-        return "Some sound"
+        def speak(self):
+          return "Some sound"
 
-    def info(self):
+     def info(self):
         return f"{self.name} makes a sound: {self.speak()}"
 class Dog(Animal):
     def __init__(self, name):
